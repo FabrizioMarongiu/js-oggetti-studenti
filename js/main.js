@@ -6,8 +6,19 @@
 $(document).ready(function(){
 
 
+// CREO UN OGGETTO CON PROPRIETà NOME COGNOME ETà
 
+var studente = {
+    nome : 'Lorenzo',
+    cognome : 'Rossi',
+    eta : 34,
+};
 
+// STAMPA DEL CONTENUTO DELL'OGGETTO "STUDENTE"
+
+for (var key in studente){
+    console.log(studente[key]);
+}
 
 
     // END DOCUMENT
