@@ -5,20 +5,67 @@
 
 $(document).ready(function(){
 
-
+// PUNTO 1
 // CREO UN OGGETTO CON PROPRIETà NOME COGNOME ETà
 
-var studente = {
-    nome : 'Lorenzo',
-    cognome : 'Rossi',
-    eta : 34,
-};
+// var studente = {
+//     nome : 'Lorenzo',
+//     cognome : 'Rossi',
+//     eta : 34,
+// };
 
-// STAMPA DEL CONTENUTO DELL'OGGETTO "STUDENTE"
+// // STAMPA DEL CONTENUTO DELL'OGGETTO "STUDENTE"
 
-for (var key in studente){
-    console.log(studente[key]);
+// for (var key in studente){
+//     console.log(studente[key]);
+// }
+
+
+// CREO UN ARRAY DI OGGETTING
+
+var studenti = [
+
+    {
+        nome : 'Fabrizio',
+        cognome : 'Rossi',
+        eta : 34,
+    },
+
+    {
+        nome : 'Barbara',
+        cognome : 'Verdi',
+        eta : 30,
+    },
+
+    {
+        nome : 'Luisa',
+        cognome : 'Quattrini',
+        eta : 27,
+    },
+
+    {
+        nome : 'Sebastian',
+        cognome : 'Black',
+        eta : 30,
+    },
+
+];
+
+// CREO IL CICLO CHE MI PERMETTERà DI FARE IL LOOP SU TUTTO L'ARRAY, PER STAMPARE SOLO IL NOME E IL COGNOME
+
+for ( var i = 0; i < studenti.length; i++){
+
+    var studente = studenti[i];
+
+    console.log('Ecco nome e cognome del ' + (i + 1) + ' studente : ' + studente.nome + " " + studente.cognome);
+
 }
+
+
+
+
+
+
 
 
     // END DOCUMENT
