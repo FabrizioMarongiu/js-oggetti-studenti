@@ -61,10 +61,39 @@ for ( var i = 0; i < studenti.length; i++){
 
 }
 
+// PUNTO 3
+// PERMETTO ALL'UTENTE DI INSERIRE UN NUOVO UTENTE NELLA CLASSE
+
+var scelta = prompt('Vuoi inserire un altro utente? si / no').toLowerCase().trim();
+
+if ( scelta === 'si'){
+
+    var newProfile = {
+
+         nome : prompt('Inserisci il nome : ').toLowerCase().trim(),
+
+         cognome : prompt('Inserisci il cognome : ').toLowerCase().trim(),
+
+         eta : parseInt(prompt('Inserisci l\'età : ')),
+    }
+    
+    console.log(newProfile);
+
+    studenti.push(newProfile);
+
+    console.log(studenti);
 
 
+// NUOVA STAMPA DELL'ARRAY AGGIORNATO
+    for ( var i = 0; i < studenti.length; i++){
 
+        var studente = studenti[i];
 
+        console.log('Ecco nome e cognome del ' + (i + 1) + ' studente : ' + studente.nome + " " + studente.cognome + ' \n La sua età e; ' + studente.eta);
+
+    }
+
+}
 
 
 
