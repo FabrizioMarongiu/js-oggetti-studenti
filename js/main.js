@@ -5,8 +5,8 @@
 
 $(document).ready(function(){
 
-// PUNTO 1
-// CREO UN OGGETTO CON PROPRIETà NOME COGNOME ETà
+//PUNTO 1
+//CREO UN OGGETTO CON PROPRIETà NOME COGNOME ETà
 
 // var studente = {
 //     nome : 'Lorenzo',
@@ -17,12 +17,16 @@ $(document).ready(function(){
 // // STAMPA DEL CONTENUTO DELL'OGGETTO "STUDENTE"
 
 // for (var key in studente){
-//     console.log(studente[key]);
+//     console.log( key + ' : ' + studente[key]);
 // }
 
 
-// CREO UN ARRAY DI OGGETTING
 
+
+/************************************************************************************************
+ * 
+*************************************************************************************************/ 
+// CREO UN ARRAY DI OGGETTI
 var studenti = [
 
     {
@@ -58,7 +62,7 @@ for ( var i = 0; i < studenti.length; i++){
     var studente = studenti[i];
 
     console.log('Ecco nome e cognome del ' + (i + 1) + ' studente : ' + studente.nome + " " + studente.cognome);
-
+     console.log('---------------------------------');
 }
 
 // PUNTO 3
@@ -75,7 +79,7 @@ if ( scelta === 'si'){
          cognome : prompt('Inserisci il cognome : ').toLowerCase().trim(),
 
          eta : parseInt(prompt('Inserisci l\'età : ')),
-    }
+    };
     
     console.log(newProfile);
 
